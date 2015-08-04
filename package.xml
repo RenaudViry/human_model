@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>human_model</name>
+  <version>0.0.1</version>
+  <description>URDF model of the Human from Move3D software</description>
+
+  <author email="rviry@laas.fr">renaud viry</author>
+  <maintainer email="rviry@laas.fr">renaud viry</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <build_depend>roscpp</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>urdf</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>urdf</run_depend>
+</package>
