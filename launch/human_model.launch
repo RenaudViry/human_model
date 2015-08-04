@@ -1,0 +1,3 @@
+<launch>
+	<param name="robot_description" command="cat $(find human_model)/urdf/AchileMKinect.urdf"/>
+</launch>
