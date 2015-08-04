@@ -1514,12 +1514,17 @@
             </material>
         </visual>
     </link>
-    <joint name="Pelvis" type="floating">
+
+
+    <!-- Joints -->
+
+
+    <!-- <joint name="Pelvis" type="floating">
         <origin xyz="0.000000 0.000000 0.000000" rpy="0 0 0"/>
         <axis xyz="0.000000 0.000000 0.000000"/>
         <child link="pelvis"/>
         <limit effort="0" lower="0" upper="0" velocity="0"/>
-    </joint>
+    </joint> -->
     <joint name="TorsoX" type="revolute">
         <origin xyz="0.037432 0.000000 0.139749" rpy="0 0 0"/>
         <axis xyz="1.000000 0.000000 0.000000"/>
@@ -1555,12 +1560,12 @@
         <child link="head"/>
         <limit effort="0" lower="-1.046667" upper="0.523333" velocity="0"/>
     </joint>
-    <joint name="HeadX" type="revolute">
+    <!-- <joint name="HeadX" type="revolute">
         <origin xyz="0.023497 0.000000 0.593966" rpy="0 0 0"/>
         <axis xyz="1.000000 0.000000 0.000000"/>
         <parent link="head"/>
         <limit effort="0" lower="-0.785000" upper="0.785000" velocity="0"/>
-    </joint>
+    </joint> -->
     <joint name="rShoulderX" type="revolute">
         <origin xyz="-0.011200 -0.239820 0.428571" rpy="0 0 0"/>
         <axis xyz="1.000000 0.000000 0.000000"/>
@@ -1596,7 +1601,7 @@
         <child link="rRadius"/>
         <limit effort="0" lower="-3.140000" upper="3.140000" velocity="0"/>
     </joint>
-    <joint name="lPoint" type="prismatic">
+    <joint name="rPoint" type="prismatic">
         <origin xyz="-0.007033 -0.430224 -0.446428" rpy="0 0 0"/>
         <axis xyz="1.000000 0.000000 0.000000"/>
         <parent link="rRadius"/>
